@@ -16,7 +16,7 @@ docker run -it --rm  -v /mnt/user/appdata/synapse:/data  -e SYNAPSE_SERVER_NAME=
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8008]</WebUI>
   <TemplateURL/>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/steinm6/docker-templates/main/steinm/icons/synapse.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
