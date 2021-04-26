@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>synapse</Name>
+  <Repository>matrixdotorg/synapse</Repository>
+  <Registry>https://hub.docker.com/r/matrixdotorg/synapse/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/matrixdotorg/synapse/</Support>
+  <Project/>
+  <Overview>Synapse, reference impl of a Matrix homeserver. https://matrix.org/   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+&#xD;
+Generate config by running&#xD;
+docker run -it --rm  -v /mnt/user/appdata/synapse:/data  -e SYNAPSE_SERVER_NAME=&amp;lt;YOUR-SERVER-NAME&amp;gt;     -e SYNAPSE_REPORT_STATS=&amp;lt;no or yes&amp;gt;  matrixdotorg/synapse:latest generate</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8008]</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1619446849</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Synapse, reference impl of a Matrix homeserver. https://matrix.org/   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+&#xD;
+Generate config by running&#xD;
+docker run -it --rm  -v /mnt/user/appdata/synapse:/data  -e SYNAPSE_SERVER_NAME=&amp;lt;YOUR-SERVER-NAME&amp;gt;     -e SYNAPSE_REPORT_STATS=&amp;lt;no or yes&amp;gt;  matrixdotorg/synapse:latest generate</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8008</HostPort>
+        <ContainerPort>8008</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/synapse</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>DE</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="/data" Target="/data" Default="/mnt/user/appdata/synapse" Mode="rw" Description="Container Path: /data&#13;&#10;Should be in appdata&#13;&#10;Contains SQLite-DB" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/synapse</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">DE</Config>
+  <Config Name="Host Port" Target="8008" Default="" Mode="tcp" Description="Container Port: 8008" Type="Port" Display="always" Required="true" Mask="false">8008</Config>
+</Container>
