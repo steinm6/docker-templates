@@ -32,7 +32,7 @@
    
   <Config Name="PARSE_PROTOCOL" Target="PARSE_PROTOCOL" Default="http" Mode="" Description="Protocol used by Parse Dashboard to form the URLs to Parse Server." Type="Variable" Display="always" Required="false" Mask="false"></Config> 
    
-  <Config Name="PARSE_USE_HOSTNAME" Target="PARSE_USE_HOSTNAME" Default="no" Mode="" Description="Whether to use a hostname or an IP to configure the "serverURL" setting." Type="Variable" Display="always" Required="false" Mask="false"></Config> 
+  <Config Name="PARSE_USE_HOSTNAME" Target="PARSE_USE_HOSTNAME" Default="no" Mode="" Description="Whether to use a hostname or an IP to configure the serverURL setting." Type="Variable" Display="always" Required="false" Mask="false"></Config> 
    
   <Config Name="PARSE_PORT_NUMBER" Target="PARSE_PORT_NUMBER" Default="1337" Mode="" Description="Parse Server Port." Type="Variable" Display="always" Required="false" Mask="false"></Config> 
    
@@ -42,11 +42,4 @@
    
   <Config Name="PARSE_DASHBOARD_APP_NAME" Target="PARSE_DASHBOARD_APP_NAME" Default="MyDashboard" Mode="" Description="Parse Dashboard application name." Type="Variable" Display="always" Required="false" Mask="false"></Config> 
    
-   
-   
-
-  
-  
-  
-  
 </Container>
