@@ -12,7 +12,7 @@
   Bitnami Docker Image for Parse! 
   </Overview>
   <Category>Productivity:</Category>
-  <WebUI>http://[IP]:[PORT:1337]</WebUI>
+  <WebUI>http://[IP]:[PORT:1337]/parse/health</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/steinm6/docker-templates/main/steinm6/bitnami-parse.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/steinm6/docker-templates/main/steinm6/icons/parse.png</Icon>
   <DateInstalled>1619446849</DateInstalled>
@@ -21,23 +21,7 @@
   
   Requires MongoDB.
   </Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>1337</HostPort>
-        <ContainerPort>1337</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/bitnami-parse</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
+  <Network>bridge</Network>
   <Environment/>
   <Labels/>
   <Config Name="Host Port" Target="1337" Default="1337" Mode="tcp" Description="Host Port" Type="Port" Display="always" Required="true" Mask="false">1337</Config>
