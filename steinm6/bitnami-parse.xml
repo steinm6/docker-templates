@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Parse Server</Name>
+  <Name>Bitnami Parse Server</Name>
   <Repository>bitnami/parse</Repository>
   <Registry>https://hub.docker.com/r/bitnami/parse</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/bitnami/parse</Support>
@@ -16,12 +15,7 @@
   <WebUI>http://[IP]:[PORT:1337]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/steinm6/docker-templates/main/steinm/icons/parse.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
   <DateInstalled>1619446849</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
   <Description>
   Parse Server is an open source version of the Parse backend that can be deployed to any infrastructure that can run Node.js.
   
