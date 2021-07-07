@@ -40,12 +40,20 @@
   </Data>
   <Environment/>
   <Labels/>
+  <Config Name="Host Port" Target="1337" Default="1337" Mode="tcp" Description="Host Port" Type="Port" Display="always" Required="true" Mask="false">1337</Config>
+  
   <Config Name="/parse" Target="/parse" Default="/mnt/user/appdata/bitnami-parse" Mode="rw" Description="Container Path: /bitnami&#13;&#10;Should be in appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bitnami-parse</Config>
+  
   <Config Name="PARSE_HOST" Target="PARSE_HOST" Default="127.0.0.1" Mode="" Description="Parse server host" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  
   <Config Name="PARSE_PORT_NUMBER" Target="PARSE_PORT_NUMBER" Default="1337" Mode="" Description="Parse server port" Type="Variable" Display="always" Required="true" Mask="false">1337</Config>
+  
   <Config Name="PARSE_MOUNT_PATH" Target="PARSE_MOUNT_PATH" Default="/parse" Mode="" Description="Parse server mount path" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  
   <Config Name="PARSE_APP_ID" Target="PARSE_APP_ID" Default="myappID" Mode="" Description="Parse server App ID" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  
   <Config Name="PARSE_MASTER_KEY" Target="PARSE_MASTER_KEY" Default="mymasterKey" Mode="" Description="Parse server Master Key" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  
   <Config Name="PARSE_ENABLE_CLOUD_CODE" Target="PARSE_ENABLE_CLOUD_CODE" Default="no" Mode="" Description="Enable Parse Cloud Code support: yes or no" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   
   <Config Name="MONGODB_HOST" Target="MONGODB_HOST" Default="mongodb" Mode="" Description="Hostname for Mongodb server" Type="Variable" Display="always" Required="true" Mask="false"></Config>
