@@ -40,7 +40,7 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="/bitnami" Target="/bitnami" Default="/mnt/user/appdata/bitnami-parse" Mode="rw" Description="Container Path: /bitnami&#13;&#10;Should be in appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bitnami-parse</Config>
+  <Config Name="/parse" Target="/parse" Default="/mnt/user/appdata/bitnami-parse" Mode="rw" Description="Container Path: /bitnami&#13;&#10;Should be in appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bitnami-parse</Config>
   <Config Name="PARSE_HOST" Target="PARSE_HOST" Default="127.0.0.1" Mode="" Description="Parse server host" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="PARSE_PORT_NUMBER" Target="PARSE_PORT_NUMBER" Default="1337" Mode="" Description="Parse server port" Type="Variable" Display="always" Required="true" Mask="false">1337</Config>
   <Config Name="PARSE_MOUNT_PATH" Target="PARSE_MOUNT_PATH" Default="/parse" Mode="" Description="Parse server mount path" Type="Variable" Display="always" Required="false" Mask="false"></Config>
@@ -49,4 +49,17 @@
   <Config Name="PARSE_ENABLE_CLOUD_CODE" Target="PARSE_ENABLE_CLOUD_CODE" Default="no" Mode="" Description="Enable Parse Cloud Code support: yes or no" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="MONGODB_HOST" Target="MONGODB_HOST" Default="mongodb" Mode="" Description="Hostname for Mongodb server" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="MONGODB_PORT_NUMBER" Target="MONGODB_PORT_NUMBER" Default="27017" Mode="" Description="Port used by Mongodb server" Type="Variable" Display="always" Required="true" Mask="false"></Config> 
+  
+  <Config Name="MONGODB_DATABASE_USER" Target="MONGODB_DATABASE_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config> 
+  
+  <Config Name="MONGODB_DATABASE_PASSWORD" Target="MONGODB_DATABASE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config> 
+  
+  <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="no" Mode="" Description="yes to allow a blank password. This is only recommended for development environments." Type="Variable" Display="always" Required="false" Mask="false"></Config> 
+   
+   
+
+  
+  
+  
+  
 </Container>
