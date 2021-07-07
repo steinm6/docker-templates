@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Parse Server</Name>
+  <Name>Bitnami Parse Server</Name>
   <Repository>bitnami/parse</Repository>
   <Registry>https://hub.docker.com/r/bitnami/parse</Registry>
   <Network>bridge</Network>
