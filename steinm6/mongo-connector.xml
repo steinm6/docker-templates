@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>mongo-connector</Name>
-  <Repository>https://hub.docker.com/repository/docker/matze1/mongo-connector</Repository>
+  <Repository>matze1/mongo-connector</Repository>
   <Registry>https://hub.docker.com/repository/docker/matze1/mongo-connector</Registry>
   <Network>bridge</Network>
   <MyIP/>
