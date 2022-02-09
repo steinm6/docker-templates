@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
+  <Project>https://github.com/yougov/mongo-connector</Project>
   <Overview>https://hub.docker.com/repository/docker/matze1/mongo-connector</Overview>
   <Category>Productivity:</Category>
   <WebUI/>
