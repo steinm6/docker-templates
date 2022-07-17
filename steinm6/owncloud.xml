@@ -78,5 +78,6 @@
   <Config Name="OWNCLOUD_DB_TYPE" Target="OWNCLOUD_DB_TYPE" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_TYPE" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
   <Config Name="Host Key 3" Target="OWNCLOUD_DB_USERNAME" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">owncloud</Config>
   <Config Name="Host Key 4" Target="OWNCLOUD_DB_PASSWORD" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">owncloud</Config>
-  <Config Name="Host Key 5" Target="OWNCLOUD_DB_HOST" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">gotham</Config>
+  <Config Name="Host Key 5" Target="OWNCLOUD_DB_HOST" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.24</Config>
+  <Config Name="Host Key 6" Target="OWNCLOUD_DB_NAME" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_NAME" Type="Variable" Display="always" Required="false" Mask="false">owncloud</Config>
 </Container>
