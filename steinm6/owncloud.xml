@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ownCloud</Name>
+  <Repository>owncloud/server</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/steinm6/docker-templates/main/steinm6/icons/owncloud.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1658082700</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8099</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ownCloud/</HostDir>
+      <ContainerDir>/mnt/data/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/owncloud/</HostDir>
+      <ContainerDir>/mnt/data/files</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>gotham</Value>
+      <Name>OWNCLOUD_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>mysql</Value>
+      <Name>OWNCLOUD_DB_TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>owncloud</Value>
+      <Name>OWNCLOUD_DB_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>owncloud</Value>
+      <Name>OWNCLOUD_DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>gotham</Value>
+      <Name>OWNCLOUD_DB_HOST</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="8080" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8099</Config>
+  <Config Name="Host Path 1" Target="/mnt/data/config" Default="" Mode="rw" Description="Container Path: /mnt/data/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ownCloud/</Config>
+  <Config Name="Host Path 2" Target="/mnt/data/files" Default="" Mode="rw" Description="Container Path: /mnt/data/files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/owncloud/</Config>
+  <Config Name="OWNCLOUD_DOMAIN" Target="OWNCLOUD_DOMAIN" Default="" Mode="" Description="Container Variable: OWNCLOUD_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">gotham</Config>
+  <Config Name="OWNCLOUD_DB_TYPE" Target="OWNCLOUD_DB_TYPE" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_TYPE" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
+  <Config Name="Host Key 3" Target="OWNCLOUD_DB_USERNAME" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">owncloud</Config>
+  <Config Name="Host Key 4" Target="OWNCLOUD_DB_PASSWORD" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">owncloud</Config>
+  <Config Name="Host Key 5" Target="OWNCLOUD_DB_HOST" Default="" Mode="" Description="Container Variable: OWNCLOUD_DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">gotham</Config>
+</Container>
